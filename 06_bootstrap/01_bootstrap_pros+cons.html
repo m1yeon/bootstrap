@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01_부트스트랩 소개와 장/단점</title>
+  <!-- 부트스트랩 연결하기 -->
+  <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- cdn 방식으로 연결하기 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+    *{font-family: "Noto Sans KR", sans-serif; padding: 0px 10px;}
+    i{font-size: 28px;}
+  </style>
+
+</head>
+<body>
+  <h2>01_부트스트랩 소개와 장/단점</h2>
+  <h3>부트스트랩(bootstarp)이란?</h3>
+  <p>반응형 웹을 빠르게 만들 수 있게 도와주는 html, css, javascript프레임워크이다.</p>
+  <p>하나의 css파일로 모바일, 태블릿, 데스크탑 다양한 기기에서 호환성이 뛰어나다.</p>
+  <p>다양한 기능을 제공하여 사용자가 쉽게 웹사이트를 제작하고 유지보수를 할 수 있다.</p>
+  <p>프레임워크는 재사용이 가능한 다양한 요소들이 모여 있으며, 정해진 구조 및 틀 안에서 확장이 가능한 코드로 구성되어 있다.</p>
+
+  <h3>부트스트랩의 장점</h3>
+  <ul>
+    <li>pc, tablet, mobile 디자인에 적합하며, 따로 디자인 하지 않아도 시간을 절약할 수 있고, 크로스브라우징에 최적화가 되어 있음</li>
+    <li>웹브라우저의 크기에 따라 자동으로 정렬되는 그리드 시스템을 제공</li>
+    <li>UI디자인 퀄리티가 뛰어나기 때문에 많은 회사,기업에서 사용하고 있음</li>
+    <li>콘텐츠 제작에 필요한 도구들을 빠르게 복사하여 사용이 가능하며, 개발자, 팀별 및 프로젝트를 인수인계 받을 때 빠르게 작업이 가능함</li>
+    <li>많은 자바스크립트 플러그인을 지원하며 특히 모바일 중심 프레임워크로 발전함</li>
+  </ul>
+  
+  <h3>부트스트랩의 단점</h3>
+  <ul>
+    <li>미리 구축되어 있는 스타일 요소가 많이 때문에 디자인과 기능이 정해져 있어 커스터마이징이 힘듬</li>
+    <li>미리 정해져 있는 클래스(class)선택자들을 확실히 인지하고 있어야 하며 또한 디바이스별로 어떻게 화면에서 표현되는지를 미리 파악하고 있어야 함</li>
+    <li>처음부터 자신이 의도한 디자인이 확실하다면 처음부터 웹사이트를 구축하는 것이 좋음. 미리 짜여있는 기능을 뜯어 고치는 것이기 때문에 오히려 시가닝 더 많이 걸리는 경향이 있음</li>
+    <li>성능면에서도 다른 프레임워크랑 큰 차이가 없지만, 페이지 로딩 속도가 다른 프레임워크보다 상당힌 무겁고 느림</li>
+    <li>부트스트랩을 사용할 경우 코드의 10%만 사용한다고 하며, 나머지 90%정도 가량 달느 코드들을 함꼐 로딩함</li>
+    <li>디자인이 정형화 되어 있어 비슷한 디자인 페이지들이 나올 수 있다. 복잡한 사이트를 개발하고자 한다면 쓰지 않는 것이 좋음</li>
+  </ul>
+
+  <h3>부트스트랩 공식 사이트에서 사용법 익히기</h3>
+  <p>http://getgootstrap.kr</p>
+  <p>부트스트랩을 사용하기 위해서는 css, js파일을 html문서에 연결하여 사용하여야 한다.</p>
+  <h4>부트스트랩 연결방법</h4>
+  <p>1. 공식사이트에서 css, js파일의 링크 주소를 복사하여 html 문서에 연결(CDN방식)</p>
+  <p>2. 공식사이트에서 css, js파일을 직접 다운로드하여 html문서에 연겨랗는 방법</p>
+
+  <h3>실습1. 아이콘삽입하기</h3>
+  <p>span, i태그 요소에 아이콘 클래스 선택자 이름을 적용하여 아이콘 표시하기</p>
+  <p>공식홈페이지 - '아이콘'메뉴 클릭 - 페이지 하단에 cdn 주소를 복사하여 링크시킨 뒤 삽입하고자 하는 클래스명을 입력하면 아이콘이 표시됨</p>
+  <i class="bi-x-lg"></i>
+  <i class="bi-alarm"></i>
+  <i class="bi bi-arrow-left"></i>
+  <i class="bi bi-arrow-through-heart"></i>
+  <i class="bi bi-balloon-heart"></i>
+  <i class="bi bi-cloud-sleet-fill"></i>
+
+  <!-- 부트스트랩 js파일 연결하기 -->
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

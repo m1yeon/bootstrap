@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02_부트스트랩_글자, 문단</title>
+   <!-- cdn 방식으로 연결하기 -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+    *{font-family: "Noto Sans KR", sans-serif; padding: 0px 10px;}
+    ul, li{list-style: none; line-height: 32px; padding-left: 10px;}
+   </style>
+</head>
+<body>
+  <h2>02_부트스트랩_글자, 문단</h2>
+  <p>부트스트랩에서는 기본 글자크기가 16px이고, 행높이(줄간격)는 1.428이 기본값이다.</p>
+  <p>위 내용은 문단태그(p)요소에 자동으로 적용되며, 하단여백(margin)은 16px이 기본값이다.</p>
+
+  <h1>부트스트랩 h1 - 35.95px, calc(1.375rem + 1.5vw)</h1>
+  <h2>부트스트랩 h2 - 29.57px, calc(1.375rem + 1.5vw)</h2>
+  <h3>부트스트랩 h3 - 26.38px, calc(1.3rem + .6vw)</h3>
+  <h4>부트스트랩 h4 - 23.19px, calc(1.275rem + .3vw)</h4>
+  <h5>부트스트랩 h5 - 20px, 1.25rem</h5>
+  <h6>부트스트랩 h6 - 16px, 1rem</h6>
+  <p>제목요소 h태그는 margin-bottom 8px이 기본값이다.</p>
+  <hr>
+  
+  <h4>1. 텍스트 관련 서식</h4>
+  <p><small>small : 글자를 작게 설정 _ 14px</small></p>
+  <p><mark>mark : 글자에 형광펜을 친 것 같은, 하이라이트 효과를 적용함 (부트스트랩이 아닐 경우 노랑배경으로 나타남)</mark></p>
+  <p><abbr>abbr : 약어나 줄임말을 사용하고자 할 때 사용함</abbr></p>
+  <p>blockquote<blockquote class="blockquote-footer">blockquote : 다른 사람의 말을 대신하여 전하는 글(글자크기:14px, 색상:#6c757d)</blockquote></p>
+  <dl>
+    <dt>용어제목_굵게</dt>
+    <dd>용어설명_기본</dd>
+  </dl>
+
+  <p><code>code : 문서안에서 태그이름을 표시하기 위한 태그로서 색상이 '자주색'으로 변경됨.<br>&nbsp;let gnb = document.getQuerySelector('.gnb');</code></p>
+
+  <ul>
+    <li class="text-muted">text-muted : 텍스트의 중요도에 따라 문자의 색상을 다르게 표시할 수 있음</li>
+    <li class="text-primary">text-primary : 텍스트의 중요도에 따라 문자의 색상을 다르게 표시할 수 있음</li>
+    <li class="text-success">text-success : 텍스트의 중요도에 따라 문자의 색상을 다르게 표시할 수 있음</li>
+    <li class="text-info">text-info : 텍스트의 중요도에 따라 문자의 색상을 다르게 표시할 수 있음</li>
+    <li class="text-wraning">text-wraning : 텍스트의 중요도에 따라 문자의 색상을 다르게 표시할 수 있음</li>
+    <li class="text-danger">text-danger : 텍스트의 중요도에 따라 문자의 색상을 다르게 표시할 수 있음</li>
+  </ul>
+  <p class="bg-info">
+    상황별로 문자의 배경색을 적용하려면<br>
+    class="bg-primary", class="bg-success", class="bg-info", class="bg-wraning", class="bg-danger" <br>
+    을 p요소안에 작성한다.
+  </p>
+
+  <hr>
+  <h4>2. 문단 관련 서식</h4>
+  <p class="lead">class="lead" : 단락을 눈에 띄게 하기(글자크기 : 20px)</p>
+  <p class="small">class="small" : 상위문자 크기의 85%=14px로 문자 크기를 작게 설정함</p>
+  <p class="text-start">class="text-start" : 문단 정렬 _ 왼쪽 정렬</p>
+  <p class="text-end">class="text-end" : 문단 정렬 _ 오른쪽 정렬</p>
+  <p class="text-center">class="text-center" : 문단 정렬 _ 중앙 정렬</p>
+  <p class="text-justify">class="text-justify" : 문단 정렬 _ 양쪽 배분 정렬</p>
+  <p class="text-nowrap">class="text-justify" : 문단끝에서 글자가 다음줄로 넘어가지 않게 하기</p>
+  <p class="text-lowercase">class="text-lowercase" : 문자를 소문자로 출력 ABC</p>
+  <p class="text-uppercase">class="text-uppercase" : 문자를 대문자로 출력 abc</p>
+  <p class="text-capitalize">class="text-capitalize" : 영문자의 첫글자만 대문자로 출력 abc</p>
+
+  <p>목록태그에 class="list-unstlye : 목록태그의 기호 숨기기(css -> list-stlye:none;)</p>
+  <p>목록태그에 class="list-inline-item" : 블럭요소를 가로배치하기 위함</p>
+  <ul class="list-unstyle">
+    <li class="list-inline-item">목록태그1</li>
+    <li class="list-inline-item">목록태그2</li>
+    <li>목록태그3</li>
+  </ul>
+
+
+</body>
+</html>
