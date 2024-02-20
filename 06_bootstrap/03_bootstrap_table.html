@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03_부트스트랩_테이블 관련 서식</title>
+     <!-- 부트스트랩 css서식 -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+      <!-- 부트스트랩 js서식 -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  
+     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+      *{font-family: "Noto Sans KR", sans-serif; padding: 0px 10px;}
+      .table img{
+        width: 100%; 
+       }
+       .prc{border: 1px solid #777; padding: 20px;}
+     </style>
+</head>
+<body>
+  <h2>03_부트스트랩_테이블 관련 서식</h2>
+  <p>부트스트랩에서 테이블 태그에는 약간의 셀안쪽 여백 기본적용</p>
+  
+  <h3>테이블 태그 구성요소 복습</h3>
+  <ul>
+    <li>table, caption, thead, tbody, tfoot, tr(행), th(셀제목), td(셀)로 구성</li>
+    <li>table태그 셀 병합 : colspan(세로), rowspan(가로)</li>
+  </ul>
+  
+  
+  
+  
+  <table class="table table-bordered table-hover">
+    <caption>표제목</caption>
+    <thead class="table-dark">
+      <tr>
+        <th>셀제목</th><th>셀제목</th><th>셀제목</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td>셀내용</td><td>셀내용</td><td>셀내용</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr class="table-success">
+        <td>셀내용</td><td>셀내용</td><td>셀내용</td>
+      </tr>
+      <tr class="table-info">
+        <td>셀내용</td><td>셀내용</td><td>셀내용</td>
+      </tr>
+      <tr>
+        <td>셀내용</td><td>셀내용</td><td>셀내용</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4>실습예제 _ 게시판 만들기</h4>
+  <div class="prc">
+  <table class="table table-bordered">
+    <thead class="table-info">
+      <tr>
+        <th>번호</th>
+        <th>제목</th>
+        <th>작성자</th>
+        <th>작성일</th>
+        <th>조회</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>4</td>
+        <td class="text-success">4번째글</td>
+        <td>관리자</td>
+        <td>2024-02-20 16:21</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td class="text-success">3번째글</td>
+        <td>관리자</td>
+        <td>2024-02-20 16:21</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td class="text-success">2번째글</td>
+        <td>관리자</td>
+        <td>2024-02-20 16:21</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td class="text-success">1번째글</td>
+        <td>관리자</td>
+        <td>2024-02-20 16:21</td>
+        <td>1</td>
+      </tr>
+    </tbody>
+  </table>
+  <nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled"><a href="#" title="a" class="page-link">Previous</a></li>
+      <li class="page-item active"><a href="#" title="a" class="page-link">1</a></li>
+      <li class="page-item"><a href="#" title="a" class="page-link">2</a></li>
+      <li class="page-item"><a href="#" title="a" class="page-link">3</a></li>
+      <li class="page-item"><a href="#" title="a" class="page-link">4</a></li>
+      <li class="page-item"><a href="#" title="a" class="page-link">Next</a></li>
+    </ul>
+  </nav>
+  </div>
+  <br>
+  <h4>부트스트랩 클래스명</h4>
+
+  <table class="table table-bordered table-responsive">
+    <tr  class="table-danger">
+      <th></th>
+      <th>class="table-striped" : 행마다 다른 색상을 적용</th>
+      <th>class = "table-bordered" : 테이블 셀 테두리 만들기</th>
+    </tr>
+    <tr>
+      <td></td>
+      <td><img src="./image/table-striped.JPG" alt="table-striped"></td>
+      <td><img src="./image/table_bordered.JPG" alt="table-bordered"></td>
+    </tr>
+    <tr class="table-danger">
+      <th>class="table-dark" : 테이블 제목줄(thead)에 배경색 어둡게 적용</th>
+      <th>class="table-hover" : 마우스 오버시 배경색 변경</th>
+      <th>class="table-success/danger,info,primary" : tr,td에 각 분류색상 적용 가능</th>
+    </tr>
+    <tr>
+      <td><img src="./image/table-dark.JPG" alt="table-dark"></td>
+      <td><img src="./image/table-hover.JPG" alt="table-hover"></td>
+      <td><img src="./image/table-danger.JPG" alt="table-셀 컬러"></td>
+    </tr>
+    <th>class="table-responsive" : 화면의 너비가 768px미만일 경우 가로로 스크롤됨</th>
+  </table>
+  <ul>
+    <li>class="table" : 테이블 기본서식
+      <img src="./image/table.JPG" alt="table">
+    </li>
+  </ul>
+  <br>
+  <h4>페이지네이션(pagination)</h4>
+
+  <p>nav, ul, li, a태그로 작성하고 nav태그에 aria-label 속성을 작성한다(페이지내 내비게이션이 여러개 있을 수 있기 때문에 목적을 반영하기 위함)</p>
+  <p>li태그에 class="page-item"을 적용하고 활성화된 메뉴는 'active', 비활성화된 메뉴는 'disabled' 적용</p>
+  <p>a태그에 class="page-link"를 적용</p>
+  <p>정렬속성은 ul태그에 class="justify-content-center"적용</p>
+  </body>
+</html>

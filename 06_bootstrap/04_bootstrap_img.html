@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04_부트스트랩_이미지 관련 서식</title>
+       <!-- 부트스트랩 css서식 -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+       <!-- 부트스트랩 js서식 -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+   
+      <style>
+       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+       *{font-family: "Noto Sans KR", sans-serif; margin: 20px;}
+        .img-thumbnail{width: 180px;}
+
+      </style>
+</head>
+<body>
+  <h2>04_부트스트랩_이미지 관련 서식</h2>
+  <img src="./image/다운로드.jpg" alt="이미지">
+  <br><br>
+
+  <h4>1. rounded : 모서리 라운드</h4>
+  <img src="./image/다운로드.jpg" alt="이미지" class="rounded">
+  <br><br>
+  
+  <h4>2. rounded-circle : 모서리 둥글게 _ 원모양주기</h4>
+  <img src="./image/다운로드.jpg" alt="이미지" class="rounded-circle"></div>
+  <br><br>
+
+  <h4>3. img-thumbnail : 이미지 섬네일 처럼 보이게 하기</h4>
+  <p>.img-thumbnail : border, padding, borderradius 속성값 사용</p>
+  <img src="./image/다운로드.jpg" alt="이미지" class="img-thumbnail">
+  <img src="./image/다운로드.jpg" alt="이미지" class="img-thumbnail">
+  <img src="./image/다운로드.jpg" alt="이미지" class="img-thumbnail">
+  <img src="./image/다운로드.jpg" alt="이미지" class="img-thumbnail">
+  <br><br>
+   
+  <h4>4. 이미지와 문자를 사용하여 콘텐츠 제작 figcaption, figure</h4>
+  <p>class="img-fluid" : 이미지를 반응형으로 동작하게 함(적용시 width:100%, height: auto속성이 자동으로 적용됨)</p>
+  <p>부모의 크기가 변하면 이미지 크기도 같이 반응함</p>
+  <figure>
+    <img src="./image/다운로드.jpg" alt="이미지" class="img-fluid">
+    <figcaption>이미지 설명문구</figcaption>
+  </figure>
+</body>
+</html>
