@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습_그리드를 활용한 반응형 갤러리</title>
+    <!-- 부트스트랩 css서식 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- 부트스트랩 js서식 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+      *{font-family: "Noto Sans KR", sans-serif;}
+      body{margin: 20px;}
+      .gallery{margin: 0px auto; background: #dfdfdf;}
+      .gallery img{
+        width: 100%;
+      }
+    </style>
+  </head>
+<body>
+  <h2>실습_그리드를 활용한 반응형 갤러리</h2>
+  <p>class="row" : display=flex속성과 같음</p>
+  <p>pc해상도일 경우 가로4칸 => col-lg-3</p>
+  <p>tablet(big) 해상도일 경우 가로 3칸 => col-lg-4</p>
+  <p>tablet(small) 해상도일 경우 가로 2칸 => col-mg-6</p>
+
+  <div class="gallery row">
+    <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+      <img src="./image/agency-thumb.jpg" alt="">
+      <figcaption>이미지 설명</figcaption>
+    </figure>
+    <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+      <img src="./image/bold.jpg" alt="">
+      <figcaption>이미지 설명</figcaption>
+    </figure>
+    <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+      <img src="./image/business-update.jpg" alt="">
+      <figcaption>이미지 설명</figcaption>
+    </figure>
+    <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+      <img src="./image/consultancy.jpg" alt="">
+      <figcaption>이미지 설명</figcaption>
+    </figure>
+    <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+      <img src="./image/create.jpg" alt="">
+      <figcaption>이미지 설명</figcaption>
+    </figure>
+    <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+      <img src="./image/event.jpg" alt="">
+      <figcaption>이미지 설명</figcaption>
+    </figure>
+    <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+      <img src="./image/hook-dk.jpg" alt="">
+      <figcaption>이미지 설명</figcaption>
+    </figure>
+    <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+      <img src="./image/hook-wt.jpg" alt="">
+      <figcaption>이미지 설명</figcaption>
+    </figure>
+    <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+      <img src="./image/main-hook.jpg" alt="">
+      <figcaption>이미지 설명</figcaption>
+    </figure>
+    <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+      <img src="./image/single-screen.jpg" alt="">
+      <figcaption>이미지 설명</figcaption>
+    </figure>
+    <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+      <img src="./image/vcard-business.jpg" alt="">
+      <figcaption>이미지 설명</figcaption>
+    </figure>
+    <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+      <img src="./image/hook-dk.jpg" alt="">
+      <figcaption>이미지 설명</figcaption>
+    </figure>
+  </div>
+  
+
+
+
+  
+</body>
+</html>

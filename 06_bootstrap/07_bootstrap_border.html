@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>07_부트스트랩_점보트론_테두리서식</title>
+    <!-- 부트스트랩 css서식 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- 부트스트랩 js서식 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+      *{font-family: "Noto Sans KR", sans-serif;}
+      body{margin: 20px;}
+      h2{background: #111; color: #fff; border-radius: 50px; padding: 20px 30px}
+      .box{padding: 20px; border-radius: 20px; box-shadow: 0px 0px 10px rgba(0,0,0,.25);}
+      h3{font-size: 30px;}
+      img{width: 80%;}
+    </style>
+</head>
+<body>
+  <h2>07_부트스트랩_점보트론_테두리서식</h2>
+  <br>
+  <div class="box">
+    <h3>01. 점보트론</h3>
+    <p>&#8226; 특별한 내용이나 정보에 특별히 관심을 보이도록 하기 위한 목적의 큰 상자(박스)입니다.</p>
+    <img src="./image/jumbotron.png" alt="점보트론">
+    <div class="container">
+      <div class="jumbotron">
+        <div class="page-header">
+          <h3>제목</h3>
+        </div>
+        <p>설명글 내용을 적습니다.</p>
+      </div>
+    </div>
+    <p>&#8226; jumbotron, page-header 서식은 버전 5이하에서 적용</p>
+  </div>
+  <br>
+  <div class="box">
+    <h3>02. 테두리서식</h3>
+    <p>&#8226; 테두리 유틸리티를 사용하여 요소의 테두리 및 테두리 반경 스타일을 빠르게 지정합니다.</p>
+    <p>&#8226; 이미지, 버튼 또는 기타 요소에 적합합니다.</p>
+    <div class="border">테두리 적용하기</div>
+    <div class="border-bottom">아래쪽 테두리 적용하기</div>
+    <div class="border-end">오른쪽 테두리 적용하기</div>
+    <div class="border-start">왼쪽 테두리 적용하기</div>
+    <div class="border-top">위쪽 테두리 적용하기</div>
+    <div class="border border-0">테두리 모두제거</div>
+    <div class="border border-top-0">위쪽 테두리 제거</div>
+    <div class="border border-bottom-0">아래쪽 테두리 제거</div>
+    <div class="border border-start-0">왼쪽 테두리 제거</div>
+    <div class="border border-end-0">오른쪽 테두리 제거</div>
+    <br>
+    <h4>(1) 테두리 색 변경하기</h4>
+    <p class="border border-primary">선색변경하기 _ border-primary/secondary/success...로 변경가능</p>
+    <p class="border border-secondary">class="border border-secondary"</p>
+    <p class="border border-info">class="border border-info"</p>
+    <p>&#8226; border서식을 원하는 컬러로 변경하고자 한다면 부트스트랩 css파일에서 색상변수값을 직접 편집하여 변경해야함</p>
+    <br>
+    <h4>(2) 테두리 투명도 적용</h4>
+    <p>&#8226; 5.2 버전부터는 테두리에 투명도 적용 가능</p>
+    <div class="border border-success p-2 mb-2 border-opacity-75">테두리 투명도 적용</div>
+    <br>
+    <h4>(3)  테두리 두께 설정하기</h4>
+    <p class="border border-1">class="border border-1"</p>
+    <p class="border border-2">class="border border-2"</p>
+    <p class="border border-3">class="border border-3"</p>
+    <br>
+    <h4>(4) 모서리 둥굴게</h4>
+    <p class="border border-primary border-3 rounded round-5"> 모서리 둥글게 하기</p>
+    <p>&#8226; class="rounded / rounded-top / rounded-end / rounded-bottom / rounded-start / rounded-circle / rounded-pill"을 활용하여 모서리를 둥글게 할 수 있다.</p>
+    <p>&#8226; 모서리 round값 설정 : round-0 / round-1 / round-3 ...</p>
+  </div>
+
+</body>
+</html>

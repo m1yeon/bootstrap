@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05_부트스트랩_그리드레이아웃</title>
+    <!-- 부트스트랩 css서식 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- 부트스트랩 js서식 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+    *{font-family: "Noto Sans KR", sans-serif;}
+    body{margin: 20px;}
+    div{background: coral; border: 2px solid light green;}
+
+  </style>
+</head>
+<body>
+  <h2>05_부트스트랩_그리드레이아웃</h2>
+  <h4>반응형 레이아웃</h4>
+  <ul>
+    <li>가변단위 : %, vw, vh, rem, em</li>
+    <li>viewport속성 : 디바이스별 해상도에 맞게 가로 크기 맞춰줌</li>
+    <li>미디어쿼리</li>
+  </ul>
+
+  <p>부트스트랩에서 그리드 레이아웃 속성을 사용하여 반응형 그리드 레이아웃을 사용할 수 있음</p>
+  <p>부트스트랩에서는 하나의 행에 반드시 12개의 열(컬럼)을 사용하여야 함</p>
+  <p>만약 12개의 열(컬럼)을 모두 사용하지 않으려면, 더 넓은 열(컬럼)을 만ㄷ르기 위해 열(컬럼)들을 하나의 그룹으로 만들어 사용할 수 있다.</p>
+
+  <h4>그리그 시스템에서 사용할 수 있는 디바이스별 클래스</h4>
+  <img src="./image/breakpoint.jpg" alt="breakpoint">
+
+  <h4>그리드 레이아웃 적용하기</h4>
+  <div class="row">
+    <div class="col-xl-12">12컬럼을 한줄로 배치하기</div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-4">12컬럼을 4칸씩 배치하기</div>
+    <div class="col-md-4">12컬럼을 4칸씩 배치하기</div>
+    <div class="col-md-4">12컬럼을 4칸씩 배치하기</div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-6">12컬럼을 6칸씩 배치하기</div>
+    <div class="col-sm-6">12컬럼을 6칸씩 배치하기</div>
+    <div class="col-sm-6">12컬럼을 6칸씩 배치하기</div>
+  </div>
+
+
+</body>
+</html>
