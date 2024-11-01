@@ -3,7 +3,7 @@
 /* 메인 레이아웃 */
 header{
   width: 100%;
-  background: #b9d0ef;
+  background: #F3843C;
   
 }
 .h_top{
@@ -38,7 +38,7 @@ header{
   font-weight: 800;
   line-height: 100px;
   display: inline;
-  color: #e94d27;
+  color: #222222;
 }
 .h_bottom > li > p{
   font-size: 14px;
@@ -116,7 +116,7 @@ body, main{
 div.list{
   width: 1200px;
   margin: 40px auto;
-  display: none;
+  display: block;
 }
 
 div.html_list{display: block;}
